@@ -1,0 +1,14 @@
+{
+  "brand": [
+    {
+      "code": 1,
+      "description": "Teste",
+      "id": 1
+    },
+    {
+      "code": 2,
+      "description": "Teste",
+      "id": 2
+    }
+  ]
+}
