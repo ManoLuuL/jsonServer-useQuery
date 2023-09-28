@@ -4,7 +4,7 @@ import { BASE_URL } from "../axios/consts";
 import { BrandType } from "./types";
 
 export const useBrandService = () => {
-  const { get, post } = axios;
+  const { get, post, put, delete: remove } = axios;
 
   const getAllBrands = useCallback(
     async () => (await get<BrandType[]>(`${BASE_URL}/brand`)).data,
@@ -16,8 +16,21 @@ export const useBrandService = () => {
     [post]
   );
 
+  const editBrand = useCallback(
+    async (data: BrandType, id: number) =>
+      (await put(`${BASE_URL}/brand/${id}`, data)).data,
+    [put]
+  );
+
+  const deleteBrand = useCallback(
+    async (id: number) => (await remove(`${BASE_URL}/brand/${id}`)).data,
+    [remove]
+  );
+
   return {
     getAllBrands,
     addBrand,
+    editBrand,
+    deleteBrand,
   };
 };

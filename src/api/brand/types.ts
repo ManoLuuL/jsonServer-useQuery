@@ -1,5 +1,5 @@
 export type BrandType = {
   id: number;
-  code: number;
+  code: string;
   description: string;
 };

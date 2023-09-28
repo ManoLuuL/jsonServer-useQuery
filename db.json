@@ -1,13 +1,13 @@
 {
   "brand": [
     {
-      "code": 1,
-      "description": "Teste",
+      "code": "1",
+      "description": "TesteA",
       "id": 1
     },
     {
-      "code": 2,
-      "description": "Teste",
+      "code": "2",
+      "description": "RE",
       "id": 2
     }
   ]

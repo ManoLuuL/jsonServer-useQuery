@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "axios": "^1.5.0",
+    "primereact": "^9.6.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1"
   },
   "devDependencies": {
     "@tanstack/react-query": "^4.35.3",
@@ -25,6 +27,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "json-server": "^0.17.3",
+    "primeicons": "^6.0.1",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
